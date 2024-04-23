@@ -26,22 +26,6 @@ $(document).ready(function() {
     
       return password;
     }
-  
-    function copyToClipboard() {
-      var passwordInput = $("input[placeholder='P4$5W0rD!']");
-      passwordInput.val(password);
-      passwordInput.select();
-      document.execCommand("copy");
-    }
-  
-    $("button[type=submit]").click(function(e) {
-      e.preventDefault();
-      password = generatePassword();
-      $("input[placeholder='P4$5W0rD!']").val(password);
-    });
-  
-    $("button[type=button]").click(function() {
-      copyToClipboard();
-    });
+    
   });
   
